@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>greetServlet</servlet-name>
+    <servlet-class>com.ensarm.cookies.server.GreetingServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>greetServlet</servlet-name>
+    <url-pattern>/samplecookies/greet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>cookieServlet</servlet-name>
+    <servlet-class>com.ensarm.cookies.server.CookiesSample</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>cookieServlet</servlet-name>
+    <url-pattern>/cookieServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>getcookieServlet</servlet-name>
+    <servlet-class>com.ensarm.cookies.server.GetCookies</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>getcookieServlet</servlet-name>
+    <url-pattern>/getcookieServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>FileReader</display-name>
+    <servlet-name>FileReader</servlet-name>
+    <servlet-class>com.ensarm.cookies.server.FileReader</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileReader</servlet-name>
+    <url-pattern>/FileReader</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>SampleCookies.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

@@ -1,0 +1,2 @@
+serviceClass: com.ensarm.cookies.client.GreetingService
+path: 7E433C0164346118F472B19FB726DD01.gwt.rpc
